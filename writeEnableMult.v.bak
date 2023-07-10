@@ -1,0 +1,16 @@
+module writeEnableMult (
+	input wire [3:0] OperationALU,
+	output reg writeEnable
+);
+
+initial begin
+	writeEnable <= 0;
+	end
+
+always @ (OperationALU)
+	if (OperationALU == 12)
+		writeEnable <= 1;
+	else 
+		writeEnable <= 0;
+
+endmodule

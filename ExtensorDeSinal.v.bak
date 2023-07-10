@@ -1,0 +1,6 @@
+module ExtensorDeSinal (
+  input wire [15:0] entrada,
+  output wire [31:0] saida
+);
+  assign outSignal = {{16{entrada[15]}}, saida};
+endmodule

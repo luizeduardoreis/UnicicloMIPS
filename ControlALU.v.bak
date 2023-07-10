@@ -1,0 +1,17 @@
+module ControlALU (
+	input [3:0] OPAlu, input [5:0] Funct, output reg [3:0] OperationALU
+);
+
+always @ (OPAlu, Funct, OperationALU)
+	if (OPAlu == 0)
+		case (Funct)
+			6'b100000: OperationALU <= 2;
+			6'b100010: OperationALU <= 3;
+			6'b100100: OperationALU <= 0;
+			6'b100101: OperationALU <= 1;
+			6'b100111: OperationALU <= 8;
+			6'b100110: OperationALU <= 6;
+			end
+endmodule
+
+		

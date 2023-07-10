@@ -1,0 +1,141 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 288 272)
+	(text "BancoDeRegistradores" (rect 5 0 118 12)(font "Arial" ))
+	(text "inst" (rect 8 192 25 204)(font "Arial" ))
+	(port
+		(pt 112 208)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 104 168 116 182)(font "Arial" )(vertical))
+		(line (pt 112 208)(pt 112 191))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "dados[31..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "dados[31..0]" (rect 21 171 82 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "rs[4..0]" (rect 0 0 35 12)(font "Arial" ))
+		(text "rs[4..0]" (rect 21 19 56 31)(font "Arial" ))
+		(line (pt 0 24)(pt 16 24)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "rt[4..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "rt[4..0]" (rect 21 75 54 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "rd[4..0]" (rect 0 0 35 12)(font "Arial" ))
+		(text "rd[4..0]" (rect 21 131 56 143)(font "Arial" ))
+		(line (pt 0 136)(pt 16 136)(line_width 3))
+	)
+	(port
+		(pt 112 0)
+		(input)
+		(text "WriteEnable" (rect 0 0 59 12)(font "Arial" ))
+		(text "WriteEnable" (rect 104 25 116 84)(font "Arial" )(vertical))
+		(line (pt 112 0)(pt 112 17))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "rsData[31..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "rsData[31..0]" (rect 149 27 213 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "rtData[31..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "rtData[31..0]" (rect 151 43 213 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48)(line_width 3))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "dolarZero[31..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "dolarZero[31..0]" (rect 138 59 215 71)(font "Arial" ))
+		(line (pt 224 64)(pt 208 64)(line_width 3))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "dolarUm[31..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "dolarUm[31..0]" (rect 142 75 215 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80)(line_width 3))
+	)
+	(port
+		(pt 224 96)
+		(output)
+		(text "dolarDois[31..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "dolarDois[31..0]" (rect 138 91 215 103)(font "Arial" ))
+		(line (pt 224 96)(pt 208 96)(line_width 3))
+	)
+	(port
+		(pt 224 112)
+		(output)
+		(text "dolarTres[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "dolarTres[31..0]" (rect 139 107 215 119)(font "Arial" ))
+		(line (pt 224 112)(pt 208 112)(line_width 3))
+	)
+	(port
+		(pt 224 128)
+		(output)
+		(text "dolarQuatro[31..0]" (rect 0 0 88 12)(font "Arial" ))
+		(text "dolarQuatro[31..0]" (rect 129 123 217 135)(font "Arial" ))
+		(line (pt 224 128)(pt 208 128)(line_width 3))
+	)
+	(port
+		(pt 224 144)
+		(output)
+		(text "dolarCinco[31..0]" (rect 0 0 83 12)(font "Arial" ))
+		(text "dolarCinco[31..0]" (rect 133 139 216 151)(font "Arial" ))
+		(line (pt 224 144)(pt 208 144)(line_width 3))
+	)
+	(port
+		(pt 224 160)
+		(output)
+		(text "dolarSeis[31..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "dolarSeis[31..0]" (rect 139 155 215 167)(font "Arial" ))
+		(line (pt 224 160)(pt 208 160)(line_width 3))
+	)
+	(port
+		(pt 224 176)
+		(output)
+		(text "dolarSete[31..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "dolarSete[31..0]" (rect 138 171 215 183)(font "Arial" ))
+		(line (pt 224 176)(pt 208 176)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 192))
+	)
+)

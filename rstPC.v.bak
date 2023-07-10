@@ -1,0 +1,15 @@
+module rstPC (
+	input reg [1:0] ExceptionCause,
+	output reg rst
+);
+
+inital begin 
+	rst <= 0;
+end
+
+always @ (*) 
+	if (ExceptionCause != 0)
+		rst <= 0;
+
+endmodule
+

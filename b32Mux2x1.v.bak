@@ -1,0 +1,8 @@
+module b32Mux2x1 (
+  input wire [31:0] data0,
+  input wire [31:0] data1,
+  input wire sel,
+  output wire [31:0] muxOut
+);
+  assign muxOut = (sel == 1'b0) ? data0 : data1;
+endmodule

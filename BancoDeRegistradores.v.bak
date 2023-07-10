@@ -1,0 +1,21 @@
+module BancoDeRegistradores (
+  input wire [4:0] enderecoLeitura, input wire [4:0] enderecoEscrita, input wire writeEnable,
+  input wire [31:0] dadosEscrita,
+  output reg [31:0] dadosSaida
+);
+  reg [31:0] registradores [0:31];
+
+  integer i;
+  initial begin
+  for (i = 0; i <= 31; i = i + 1)
+      registradores[i] = 32'b0;
+  end
+  
+  always @(posedge clk) begin
+    if (writeEnable && (enderecoEscrita != 0))
+      registradores[enderecoEscrita] <= dadosEscrita;
+  end
+  
+  assign dadosSaida = registradores[enderecoLeitura];
+  
+endmodule
